@@ -1,0 +1,28 @@
+﻿{
+  "description": "Filter HTTP request with regex",
+  "manifest_version": 2,
+  "name": "Request RegEx Filter",
+  "version": "1.0",
+
+  "applications": {
+    "gecko": {
+      "id": "{a2c52af7-1cdd-4540-8d3b-ce73abfa7200}",
+      "strict_min_version": "55.0"
+    }
+  },
+  
+  "permissions": [
+    "webRequest",
+    "<all_urls>",
+    "storage",
+    "webRequestBlocking"
+  ],
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  
+  "options_ui": {
+    "page": "options.html"
+  }
+}

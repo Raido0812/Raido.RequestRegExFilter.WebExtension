@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css" />
+  </head>
+  <body>
+    <h1>Request RegEx Filter - Settings</h1>
+    <h2>Blacklist</h2>
+    <h3>Current RegEx (All url's matching the Regular Expressions here will be blocked</h3>
+    <div>
+        <div>
+            <select multiple="true" id="blacklist" class="width-50"></select>
+        </div>
+        <button id="removeSelectedRegEx" disabled="disabled">Remove Selected</button>
+    </div>
+    <h3>Add a new RegEx Filter:</h3>
+    <form>
+        <div>
+            <input type="text" id="regexText" class="width-50" placeholder="New Regular Expression">
+        </div>
+        <button type="submit">Add to Blacklist</button>
+    </form>
+
+    <script src="options.js"></script>
+
+  </body>
+
+</html>
